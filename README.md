@@ -21,3 +21,19 @@ This project is a SQL-based system designed to manage suppliers, products, stock
    ```bash
    git clone https://github.com/yourusername/Inventory-Order-Management-SQL.git
 
+CREATE PROCEDURE InProd @PD AS VARCHAR(100), @P AS INT, @C AS CHAR(2), @SID AS CHAR(5)
+AS
+BEGIN
+    DECLARE @ID AS CHAR(5);
+    DECLARE @I AS INT;
+
+    SET @I = (NEXT VALUE FOR s3);
+    SET @ID = dbo.CID('P', @I);
+   
+    INSERT INTO Product 
+    VALUES (@ID, @PD, @P, @C, @SID);
+
+    SELECT * FROM Product;
+END;
+
+
