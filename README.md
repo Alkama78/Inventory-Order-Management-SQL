@@ -19,7 +19,7 @@ This project is a SQL-based system designed to manage suppliers, products, stock
 ## Getting Started
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/Inventory-Order-Management-SQL.git
+   git clone https://github.com/Alkama78/Inventory-Order-Management-SQL.git
 
 CREATE PROCEDURE InProd @PD AS VARCHAR(100), @P AS INT, @C AS CHAR(2), @SID AS CHAR(5)
 AS
